@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan | Modern Living</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo nav-link" data-page="home"><strong>ARTISAN.</strong></div>
+        
+        <div class="menu">
+            <button class="nav-link" data-page="home">Home</button>
+            <button class="nav-link" data-page="shop">Collection</button>
+            <button class="nav-link" data-page="lookbook">Lookbook</button>
+            <button class="nav-link" data-page="about">About</button>
+            <button class="nav-link" data-page="contact">Contact Us</button>
+        </div>
+        <div class="icons">
+            <button class="nav-link" data-page="login">Login</button>
+            <button class="nav-link cart-btn" data-page="cart">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+    <main>
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>The Art of Designing.</h1>
+                    <p>Furniture designed for the bold.</p>
+                    <button class="gold-btn nav-link" data-page="shop">View Collection</button>
+                </div>
+            </div>
+        </section>
+        <section id="shop" class="page hidden">
+            <div class="container">
+                <h2 class="section-head">The Collection</h2>
+                <div class="grid">
+                    <div class="card" data-id="1" data-name="Midnight Velvet Sofa" data-price="1200">
+                        <img src="C:\Users\omer\Downloads\3 Seater Sofas _ Modern & Contemporary 3 Seater Sofas.jpeg" alt="Sofa">
+                        <div class="details">
+                            <h3>Midnight Velvet Sofa</h3>
+                            <p class="price">$1,200</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="2" data-name="Obsidian Lamp" data-price="150">
+                        <img src="c:\Users\omer\OneDrive\Pictures\Screenshots\Screenshot 2025-11-26 215023.png" alt="Lamp">
+                        <div class="details">
+                            <h3>Obsidian Lamp</h3>
+                            <p class="price">$150</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="3" data-name="Ebony Coffee Table" data-price="450">
+                        <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600" alt="Table">
+                        <div class="details">
+                            <h3>Ebony Coffee Table</h3>
+                            <p class="price">$450</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="4" data-name="OpalGlow Mirror" data-price="890">
+                        <img src="C:\Users\omer\Downloads\download (4).jpeg" alt="Mirror">
+                        <div class="details">
+                            <h3>OpalGlow Mirror</h3>
+                            <p class="price">$890</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="5" data-name="Imperial Bookshelf" data-price="600">
+                        <img src="C:\Users\omer\OneDrive\Pictures\Screenshots\Screenshot 2025-11-29 193822.png" alt="Bookshelf">
+                        <div class="details">
+                            <h3>Imperial Bookshelf</h3>
+                            <p class="price">$600</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="6" data-name="Charcoal Wool Rug" data-price="320">
+                        <img src="C:\Users\omer\Downloads\Modern Brutalist Charcoal Area Rug Charcoal and Silver Texture.jpeg" alt="Rug">
+                        <div class="details">
+                            <h3>Charcoal Wool Rug</h3>
+                            <p class="price">$320</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="7" data-name="Artisan Wall Shelf" data-price="125">
+                        <img src="c:\Users\omer\OneDrive\Pictures\Screenshots\Screenshot 2025-11-28 000458.png" alt="Shelf">
+                        <div class="details">
+                            <h3>Artisan Wall Shelf</h3>
+                            <p class="price">$125</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-id="8" data-name="EchoWave TV Console" data-price="1,350">
+                        <img src="C:\Users\omer\OneDrive\Pictures\Screenshots\Screenshot 2025-11-28 001636.png" alt="TV console">
+                        <div class="details">
+                            <h3>EchoWave TV Console</h3>
+                            <p class="price">$1,350</p>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lookbook" class="page hidden">
+            <div class="container">
+                <h2 class="section-head">Inspiration Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="C:\Users\omer\Downloads\download (2).jpeg" alt="Room 1">
+                        <div class="overlay">The Living Room</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="C:\Users\omer\Downloads\Finally Achieve a Masculine and Clean Look With Decor For Men.jpeg" alt="Room 2">
+                        <div class="overlay">The Study</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="C:\Users\omer\Downloads\download.jpeg" alt="Room 3">
+                        <div class="overlay">The Bedroom</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cart" class="page hidden">
+            <div class="container small-container">
+                <h2 class="section-head">Your Selections</h2>
+                <div id="cart-items">
+                    <p class="empty-msg">Your cart is currently empty.</p>
+                </div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="total-display">0</span></h3>
+                    <button class="gold-btn" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
+        <section id="login" class="page hidden">
+            <div class="login-box">
+                <h2>Member Login</h2>
+                <form id="login-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="gold-btn full">Sign In</button>
+                </form>
+                <div class="switch-form">
+                    <p>New here? <span class="nav-link" data-page="register">Create an Account</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="register" class="page hidden">
+            <div class="login-box">
+                <h2>Create Account</h2>
+                <form id="register-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Create Password" required>
+                    <button type="submit" class="gold-btn full">Sign Up</button>
+                </form>
+                <div class="switch-form">
+                    <p>Already have an account? <span class="nav-link" data-page="login">Login</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="page hidden">
+            <div class="container text-center">
+                <h2 class="section-head">About ARTISAN</h2>
+                <p>We believe furniture should not just fill a space, but define it. Founded in 2025, our mission is to bring modern, dark aesthetics to contemporary homes.We offer high-quality affordable furniture that transforms every space into a place you love.</p>
+            </div>
+        </section>
+        <section id="contact" class="page hidden">
+            <div class="container small-container">
+                <h2 class="section-head">Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>We are here to assist you with your interior needs.</p>
+                        <div class="info-item">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:artisaninteriors@2025.com." class="contact-link">artisaninteriors@2025.com</a>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone:</strong><br>
+                            <a href="tel:(042) 111 732 333" class="contact-link">(042) 111 732 333</a>
+                        </div>
+                        <div class="info-item">
+                            <strong>Showroom:</strong><br>
+                            <p>18-C1  MM Alam Rd,Gulberg III,Lahore,Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-box">
+                        <form id="contact-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <button class="gold-btn full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h4>The Company</h4>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Help</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Popular Categories</h4>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="shop">Bedroom</a></li>
+                    <li><a href="#" class="nav-link" data-page="shop">Living Rooms</a></li>
+                    <li><a href="#" class="nav-link" data-page="shop">Kitchen</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>More Information</h4>
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Delivery & Returns</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" class="s-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="s-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:artisaninteriors@2025.com" class="s-icon"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; ARTISAN Interiors All Right Reserved</p>
+            <button class="up-arrow" id="scroll-up-btn">&#8593;</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
