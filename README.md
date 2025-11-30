@@ -14,6 +14,7 @@ Functionality:
 -Add items to the cart.
 -Calculation of totals.
 -Remove items.
+-uparrow btn at bottom footer
 -A functional contact page with validation.
 -User login form
 
